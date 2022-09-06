@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 #Resharper of course
 .idea/
+.DS_Store

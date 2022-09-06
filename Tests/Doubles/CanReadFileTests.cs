@@ -2,13 +2,13 @@ using NUnit.Framework;
 using src.Core.Utilities;
 using Tests.SocialBasedTests;
 
-namespace Tests.Utilities;
+namespace Tests.Doubles;
 
 public class FileReaderTests : CanReadFileTests
 {
     [SetUp]
     public void Setup()
     {
-        _sut = new IOFileReader();
+        _sut = new FakeFileReader();
     }
 }

@@ -1,0 +1,147 @@
+using NUnit.Framework;
+using src.Core.Domain;
+
+namespace Tests
+{
+    public class RoverTests
+    {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
+        [Test]
+        public void Test1()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.North);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.North);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+           [Test]
+        public void CanMoveForward()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.North);
+            var expected_position = new Position(new Point(0,1), CardinalPoints.North);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("F");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+        [Test]
+        public void CanMoveForwardToSouth()
+        {
+            var initial_position = new Position(new Point(0,1), CardinalPoints.South);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.South);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("F");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+          [Test]
+        public void CanMoveForwardToEast()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.East);
+            var expected_position = new Position(new Point(1,0), CardinalPoints.East);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("F");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position), "expected: {0} ; sut: {1}", expected_position.ToString(), sut.ToString());
+        }
+
+        [Test]
+        public void CanMoveForwardToWest()
+        {
+            var initial_position = new Position(new Point(1,0), CardinalPoints.West);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.West);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("F");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position), "expected: {0} ; sut: {1}", expected_position.ToString(), sut.ToString());
+        }
+
+
+        [Test]
+        public void CanMoveBackwardToSouth()
+        {
+            var initial_position = new Position(new Point(0,1), CardinalPoints.North);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.North);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("B");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+         [Test]
+        public void CanMoveBackwardToNorth()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.South);
+            var expected_position = new Position(new Point(0,1), CardinalPoints.South);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("B");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+         [Test]
+        public void CanTurnRight()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.South);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.West);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("R");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+   [Test]
+        public void CanTurnLeft()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.South);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.East);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("L");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+
+        [Test]
+        public void CanTurnLeftFacingNorth()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.North);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.West);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("L");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+
+          [Test]
+        public void CanTurnRightFacingEast()
+        {
+            var initial_position = new Position(new Point(0,0), CardinalPoints.East);
+            var expected_position = new Position(new Point(0,0), CardinalPoints.South);
+            var sut = new Rover(initial_position);
+
+            sut.RunOneCommand("R");
+
+            Assert.That(sut.Position, Is.EqualTo(expected_position));
+        }
+    }
+}
