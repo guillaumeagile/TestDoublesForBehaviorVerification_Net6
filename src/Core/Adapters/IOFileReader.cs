@@ -1,7 +1,7 @@
-using src;
+using System.IO;
 using src.Core.Behaviors;
-using System.IO;  
-namespace src.Core.Utilities
+
+namespace src.Core.Adapters
 {
     public class IOFileReader : ICanReadFile
     {

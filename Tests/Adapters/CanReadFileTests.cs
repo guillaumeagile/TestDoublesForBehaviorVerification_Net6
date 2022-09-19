@@ -1,8 +1,8 @@
 using NUnit.Framework;
-using src.Core.Utilities;
+using src.Core.Adapters;
 using Tests.SocialBasedTests;
 
-namespace Tests.Utilities;
+namespace Tests.Adapters;
 
 public class FileReaderTests : CanReadFileTests
 {
