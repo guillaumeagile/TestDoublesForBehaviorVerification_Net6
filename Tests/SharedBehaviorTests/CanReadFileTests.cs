@@ -11,7 +11,7 @@ public abstract class CanReadFileTests
     public void FileIsProperlyRead()
     {
         var actual = _sut.ReadAllText("map.json");
-        var expected = @"{""LargeurCarte"" : 3, ""LongueurCarte"" : 4}";
+        var expected = @"{""theUselessData"" : 3, ""theUsefullData"" : 4}";
         Assert.AreEqual(expected, actual);
     }
 }

@@ -5,7 +5,7 @@ using Tests.SharedBehaviorTests;
 
 namespace Tests.Adapters;
 
-public class FileReaderTests : CanReadFileTests
+public class FileSystemReaderTests : CanReadFileTests
 {
     [SetUp]
     public void Setup()

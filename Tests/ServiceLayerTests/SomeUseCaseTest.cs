@@ -14,7 +14,7 @@ public class SomeUseCaseTest
     {
         var sut = new SomeUseCase();
 
-        sut.KnowTheLargeurCarte().Should().BeSome();
-        sut.KnowTheLargeurCarte().Should().Be(4);
+        sut.GrabTheUsefullData().Should().BeSome();
+        sut.GrabTheUsefullData().Should().Be(4);
     }
 }

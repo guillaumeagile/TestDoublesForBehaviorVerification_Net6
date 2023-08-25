@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using Tests.SharedBehaviorTests;
 
-namespace Tests.Doubles;
+namespace Tests.zDoublesThatWeAreNotGoingToUse;
 
-public class FileReaderTests : CanReadFileTests
+public class FakeFileReaderTests : CanReadFileTests
 {
 
     [SetUp]

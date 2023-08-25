@@ -5,7 +5,7 @@ namespace Tests.YourStubsTestedHere;
 public class SampleTest
 {
     [Test]
-    public void Test_()
+    public void UnitTestTheBehaviorOfYourFake_()
     {
       //  var sut = new yourFake();
 
