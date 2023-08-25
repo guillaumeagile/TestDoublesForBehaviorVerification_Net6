@@ -1,7 +1,6 @@
-namespace src.Core.Behaviors
+namespace src.Core.Behaviors;
+
+public interface ICanReadFile
 {
-    public interface ICanReadFile
-    {
-        string ReadAllText(string filePath);
-    }
+    string ReadAllText(string filePath);
 }

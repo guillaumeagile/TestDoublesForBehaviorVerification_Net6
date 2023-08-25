@@ -1,15 +1,14 @@
 using NUnit.Framework;
-using Tests.SocialBasedTests;
+using Tests.SharedBehaviorTests;
 
 namespace Tests.Doubles;
 
 public class FileReaderTests : CanReadFileTests
 {
-
     public override int Price
     {
-        get { return 0; }
-        set {  ; }
+        get => 0;
+        set { ; }
     }
 
     [SetUp]

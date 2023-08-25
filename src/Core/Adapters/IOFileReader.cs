@@ -1,13 +1,12 @@
 using System.IO;
 using src.Core.Behaviors;
 
-namespace src.Core.Adapters
+namespace src.Core.Adapters;
+
+public class IOFileReader : ICanReadFile
 {
-    public class IOFileReader : ICanReadFile
+    public string ReadAllText(string filePath)
     {
-        public string ReadAllText(string filePath)
-        {
-            return File.ReadAllText(filePath);
-        }
+        return File.ReadAllText(filePath);
     }
 }

@@ -1,7 +1,6 @@
-namespace src.Core.Behaviors
+namespace src.Core.Behaviors;
+
+public interface ICanWriteFile
 {
-    public interface ICanWriteFile
-    {
-        void WriteInFile(string filePath, string content);
-    }
+    void WriteInFile(string filePath, string content);
 }
