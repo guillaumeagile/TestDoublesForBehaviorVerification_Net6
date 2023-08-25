@@ -9,7 +9,7 @@ Start by completing this file: Tests/ServiceLayerTests/StartWith_SomeUseCaseTest
 
 ## How (and why and when) to avoid mocks
 
-it's all about verifying behaviour
+it's all about verifying that behaviour is truly the same between Stubs (fake or mocks) and production or adapters
 
 ### libraries that I used
  - Monads and functional extensions:
