@@ -14,6 +14,7 @@ it's all about verifying behaviour
 ### libraries that I used
  - Monads and functional extensions:
 https://github.com/louthy/language-ext#optional-and-alternative-value-monads
+
 which is a bit like https://arrow-kt.io/learn/typed-errors/nullable-and-option/
 
  - Fluent assertions 
@@ -22,7 +23,9 @@ which is a bit like https://arrow-kt.io/learn/typed-errors/nullable-and-option/
 
 
 ### Langage c-sharp
-https://dotnet.microsoft.com/download/dotnet-core/3.1
+https://dotnet.microsoft.com/en-us/download/dotnet
+
+install on Mac https://formulae.brew.sh/cask/dotnet
 
 ### using Nunit3 on netCore 6
 
