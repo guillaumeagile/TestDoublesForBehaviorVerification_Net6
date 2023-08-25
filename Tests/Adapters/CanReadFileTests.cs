@@ -7,8 +7,6 @@ namespace Tests.Adapters;
 
 public class FileReaderTests : CanReadFileTests
 {
-  
-
     [SetUp]
     public void Setup()
     {

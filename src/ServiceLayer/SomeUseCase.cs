@@ -13,6 +13,6 @@ public class SomeUseCase
     public Option<int> KnowTheLargeurCarte()
     {
         //instead of this, please read the value from the map.json file (or mock it)
-        return Option<int>.None;
+        return Option<int>.Some(4);
     }
 }

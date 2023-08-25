@@ -9,8 +9,6 @@ namespace Tests.ServiceLayerTests;
 
 public class SomeUseCaseTest
 {
-  
-
     [Test]
     public void Test_()
     {

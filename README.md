@@ -12,6 +12,16 @@ TODO: move to .Net7
 
 it's all about verifying behaviour
 
+# libraries that I used
+ - Monads and functional extensions:
+https://github.com/louthy/language-ext#optional-and-alternative-value-monads
+which is a bit like https://arrow-kt.io/learn/typed-errors/nullable-and-option/
+
+ - Fluent assertions 
+ - Mocks
+   https://github.com/moq/moq
+
+
 # Reference links
 
 - [GitLab CI Documentation](https://docs.gitlab.com/ee/ci/)
