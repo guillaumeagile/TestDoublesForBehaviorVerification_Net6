@@ -5,11 +5,6 @@ namespace Tests.Doubles;
 
 public class FileReaderTests : CanReadFileTests
 {
-    public override int Price
-    {
-        get => 0;
-        set { ; }
-    }
 
     [SetUp]
     public void Setup()

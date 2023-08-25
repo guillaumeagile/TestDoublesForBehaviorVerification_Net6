@@ -6,6 +6,12 @@ https://dotnet.microsoft.com/download/dotnet-core/3.1
 
 ### using Nunit3 on netCore 6
 
+TODO: move to .Net7
+
+## How to avoid mocks
+
+it's all about verifying behaviour
+
 # Reference links
 
 - [GitLab CI Documentation](https://docs.gitlab.com/ee/ci/)

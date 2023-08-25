@@ -6,8 +6,7 @@ namespace Tests.SharedBehaviorTests;
 public abstract class CanReadFileTests
 {
     protected ICanReadFile _sut;
-    public abstract int Price { get; set; }
-
+    
     [Test]
     public void FileIsProperlyRead()
     {

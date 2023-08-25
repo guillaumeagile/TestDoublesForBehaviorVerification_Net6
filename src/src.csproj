@@ -5,14 +5,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Dawn.Guard" Version="1.12.0"/>
+        <PackageReference Include="Dawn.Guard" Version="1.12.0" />
+        <PackageReference Include="LanguageExt.Sys" Version="4.4.3" />
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Adapters\Dto"/>
-        <Folder Include="Core\Domain"/>
-        <Folder Include="Core\Model"/>
-        <Folder Include="ServiceLayer"/>
+        <Folder Include="Adapters\Dto" />
+        <Folder Include="Core\Domain" />
+        <Folder Include="Core\Model" />
     </ItemGroup>
 
 </Project>
