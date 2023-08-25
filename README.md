@@ -1,18 +1,17 @@
 ## Introduction
-TBD
 
-### Langage c-sharp
-https://dotnet.microsoft.com/download/dotnet-core/3.1
+the aim of this exercise is 
+ - to use Mocks, and/or Fakes 
+ - discuss the pro and cons 
+ - dig into deeper test cases where behavior is tricky
 
-### using Nunit3 on netCore 6
+Start by completing this file: Tests/ServiceLayerTests/StartWith_SomeUseCaseTest.cs
 
-TODO: move to .Net7
-
-## How to avoid mocks
+## How (and why and when) to avoid mocks
 
 it's all about verifying behaviour
 
-# libraries that I used
+### libraries that I used
  - Monads and functional extensions:
 https://github.com/louthy/language-ext#optional-and-alternative-value-monads
 which is a bit like https://arrow-kt.io/learn/typed-errors/nullable-and-option/
@@ -21,6 +20,13 @@ which is a bit like https://arrow-kt.io/learn/typed-errors/nullable-and-option/
  - Mocks
    https://github.com/moq/moq
 
+
+### Langage c-sharp
+https://dotnet.microsoft.com/download/dotnet-core/3.1
+
+### using Nunit3 on netCore 6
+
+TODO: move to .Net7
 
 # Reference links
 
